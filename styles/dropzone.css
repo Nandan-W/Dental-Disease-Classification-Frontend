@@ -1,0 +1,138 @@
+.check-page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+
+.upload-section {
+    text-align: center;
+}
+
+.upload-section h1 {
+    font-size: 1.875rem;
+    color: var(--gray-900);
+    margin-bottom: 0.5rem;
+}
+
+.upload-section > p {
+    color: var(--gray-600);
+    margin-bottom: 2rem;
+}
+
+.drop-zone {
+    width: 100%;
+    max-width: 42rem;
+    height: 16rem;
+    margin: 0 auto;
+    border: 2px dashed var(--gray-200);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.drop-zone:hover, .drop-zone.dragover {
+    border-color: var(--primary);
+    background: #eff6ff;
+}
+
+.drop-zone svg {
+    width: 3rem;
+    height: 3rem;
+    color: var(--gray-500);
+    margin-bottom: 1rem;
+}
+
+.drop-zone p {
+    color: var(--gray-600);
+    margin-bottom: 0.5rem;
+}
+
+.drop-zone span {
+    font-size: 0.875rem;
+    color: var(--gray-500);
+}
+
+.loader {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    margin-top: 2rem;
+    color: #dc2626;
+}
+
+.results {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.results h2 {
+    font-size: 1.5rem;
+    color: var(--gray-900);
+    margin-bottom: 1.5rem;
+}
+
+.result-card {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.result-category {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--gray-900);
+}
+
+.result-percentage {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.625rem;
+    background: var(--gray-200);
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 9999px;
+    transition: width 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
